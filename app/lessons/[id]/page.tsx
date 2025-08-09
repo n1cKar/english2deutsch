@@ -30,13 +30,35 @@ export default function LessonDetail() {
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
             {/* Header */}
             <header className="bg-white dark:bg-gray-800 shadow-sm">
-                <Header />
+                <Header hideNavLinks={true}/>
             </header>
 
             <main className="max-w-4xl mx-auto px-4 py-10 space-y-6">
                 <h1 className="text-4xl font-bold">{lesson.title}</h1>
                 <h2 className='text-2xl font-semibold text-amber-600 dark:text-amber-400 mb-4'>{lesson.description}</h2>
                 <p className="text-gray-900 dark:text-gray-200 text-lg whitespace-pre-line">{lesson.content}</p>
+                <ul className="list-disc list-inside space-y-2">
+                    {lesson.resources?.map((res, index) => (
+                        <li key={index}>
+                            <a
+                                href={res.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 dark:text-blue-400 hover:underline"
+                            >
+                                {res.title}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+
+                <div className="mt-6">
+                    <Link href="/lessons">
+                        <button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-medium">
+                            Back to Lessons
+                        </button>
+                    </Link>
+                </div>
 
                 {/* TODO: Add examples, exercises, audio, images here */}
             </main>
