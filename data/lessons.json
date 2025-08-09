@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Basic Greetings",
+    "content": "Learn how to say hello, goodbye, and other common greetings in German."
+  },
+  {
+    "id": 2,
+    "title": "Numbers and Counting",
+    "content": "Understand numbers from 1 to 100 and how to use them in everyday situations."
+  },
+  {
+    "id": 3,
+    "title": "Common Phrases",
+    "content": "Useful phrases for shopping, dining, and traveling in German-speaking countries."
+  }
+]
