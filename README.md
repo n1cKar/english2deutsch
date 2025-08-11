@@ -40,7 +40,7 @@ English2Deutsch is a modern web application built with Next.js, TypeScript, and 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/english2deutsch.git
+git clone https://github.com/n1cKar/english2deutsch.git
 cd english2deutsch
 ```
 
